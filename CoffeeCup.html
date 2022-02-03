@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<style>
+				.coffee-container{
+				  width:500px;
+				  heihgt:500px;
+				  margin:10px auto;
+				  position: relative;
+				}
+
+				.coffee-cup{
+				  position:relative;
+				  width:350px;
+				  height:220px;
+				  margin: 100px auto;
+				  background: radial-gradient(circle, rgba(255, 190, 160, 1) 10%, rgba(130, 18, 80, 1) 81%);
+				  border-radius: 0 0 50% 50%;
+				}
+
+				.coffee-cup::before {
+				  content: '';
+				  height: 30px;
+				  width: 350px;
+				  position: absolute;
+				  border-radius: 150%;
+				  background: radial-gradient(circle,rgba(132, 102, 76, 1) 5%,rgba(86, 44, 8, 1) 96%);
+					top: -14px;
+					left:1px;
+					z-index: 9;
+				}
+
+				.coffee-hand{
+				  width: 52px;
+				  height: 32px;
+				  position : absolute;
+				  background: #fff;
+				  border-radius: 32px;
+				  transform : rotate(-36deg);
+				  z-index: -1;
+				  border: 15px solid rgba(143, 141, 141, 1);
+				  top: 20%;
+				  left:77%;
+				}
+
+				.coffee-tasse{
+				  width: 400px;
+				  top: 60%;
+				  left: 10%;
+				  height: 130px;
+				  background: radial-gradient(circle,rgba(69, 69, 69, 1) 13%,rgba(176, 176, 176, 1) 45%,rgba(143, 141, 141, 1) 96%);
+					border-radius: 50%;
+					position: absolute;
+					z-index: -1;
+					border: 2px solid #fff;
+					box-shadow: 1px 3px 0px 1px #323232;
+				}
+
+				.coffee-tasse::after{
+					content: '';
+					display:block;
+					width: 400px;
+					top: 58%;
+					border-radius: 55%;
+					height: 130px;
+					background: transparent;
+					box-shadow: 2px 5px 8px 3px             #bababa;
+				}
+		</style>
+	</head>
+	<body>
+		<div class='coffee-container'>
+		  <div class='coffee-cup'></div>
+		  <div class='coffee-hand'></div>
+		  <div class='coffee-tasse'></div>
+		</div> 
+	</body>
+</html>
