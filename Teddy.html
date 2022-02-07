@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<style>
+				body{
+				  margin:0;
+				  padding:0;
+				  background-color: #95b7c0;
+				}
+
+				.teddy{
+				  background-color:#fde7b6;
+				  width:250px;
+				  height:250px;
+				  border-radius:50%;
+				  position:absolute;
+				  margin:auto;
+				  top:0;
+				  right:0;
+				  left:0;
+				  bottom:0;
+				}
+
+				.teddy:before{
+				  position:absolute;
+				  content:'';
+				  background-color:#f5d9ad;
+				  height:120px;
+				  width:150px;
+				  border-radius:50%;
+				  top:130px;
+				  left:50px;
+				  /*
+				  It's not working...
+				  background-image:linear-gradient(
+					#f5d9ad 40px,
+					transparent 40px,
+					transparent 90px, 
+					#f5d9ad:90px
+				  ), 
+				   linear-gradient(
+					to right, 
+					transparent 74px, 
+					#5f1912 73px, 
+					#5f1912 75px,
+					transparent 75px);
+				  */
+				}
+
+				.teddy:after{
+				  position:absolute;
+				  content:'';
+				  width:30px;
+				  height:30px;
+				  border-radius:50%;
+				  background-color:transparent;
+				  box-shadow: 
+					-95px -180px 0 30px #c2704a,
+					95px -180px 0 30px #c2704a,
+					-95px -180px 0 50px #fde7b6,
+					95px -180px 0 50px #fde7b6,
+					-50px -105px 0 -8px #fff,
+					50px -105px 0 -8px #fff,
+					-38px -91px 0 -12px #fff,
+					38px -91px 0 -12px #fff,
+					-45px -100px 0 2px #5f1912,
+					45px -100px 0 2px #5f1912,
+					0 -40px 0 3px #5f1912,
+					0 17px 0 3px #5f1912;
+				  top:180px;
+				  left:110px;
+				}
+		</style>
+	</head>
+	<body>
+		<div class='teddy'></div>
+	</body>
+</html>
